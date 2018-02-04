@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8"/>
+		<title>Login | Cuadrados</title>
+		<link type="text/css" rel="stylesheet" href="estilo.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>		
+	</head>
+	<script type="text/javascript" src="login.js"></script>
+	<body meta="utf-8">
+	<center>
+		<div id="login">
+			<form name="formulario1" action="juego.html"><br/>
+				<h3>Acceso para jugadores</h3>
+				Nombre Jugador:<br/>
+        <input type="text" id="login_nombre" size="20"/><br/><br/>
+				Contraseña:<br/>
+				<input type="password" id="login_contraseña" size="10"/><br/><br/>
+
+				<input type="submit" id="boton_enviar" Onclick="datos_jugador()"/><br/><br/>
+				<input type="button" value="Instrucciones" id="instrucciones" Onclick="muestra_datos()"/><br/><br/>
+				<a href="registro.html">Regístrate para jugar</a><br/><br/>
+			</form>
+		</div>
+		<br/>
+	</center>
+   </body>
+</html>

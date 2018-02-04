@@ -1,0 +1,53 @@
+table td {
+	width:11px;
+	height:11px;
+}
+body{
+	background-image:url("wallpapers.jpg");
+  color: #D9820B;
+}
+table{
+	border-collapse: collapse;
+}
+
+#nivel_dificultad{
+	float:top;
+	position :relative;
+}
+
+#segundos_win, #cant_puntos, #jugador {
+	font-weight: bold;
+}
+
+#zonadibujo{
+	float:right;
+	position :relative;	
+}
+
+#login{
+  background:#292116;
+  color: #D9820B;
+	width:250px;
+	position:center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.0em;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#registro{
+  background:#292116;
+  color: #D9820B;
+	width:250px;
+	position:center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.0em;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+input{
+	text-align:center;
+}

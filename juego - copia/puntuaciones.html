@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8"/>
+		<title>Clasificación Mundial | Cuadrados</title>
+		<link type="text/css" rel="stylesheet" href="estilo.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+	</head>
+	<body meta="utf-8">
+		<!--<script type="text/javascript" src="script.js"></script><br/>-->
+		<script src="puntuaciones.js"></script>
+		<script type="text/javascript">
+			toastr.options.closeButton = true;
+			toastr.options.positionClass = "toast-bottom-right";
+			function notification( type, message ) {
+					if( type == 'info' ) {
+							toastr.info(message,'<b>Clasificación Mundial</b><br><br>');
+					}
+			}
+			var jugador_puntuacion=sessionStorage.getItem('jugador_sesion');
+			localStorage.setItem(jugador_puntuacion+'_puntuacion',(puntos_restar+10));
+		</script>
+		<div align="center" id="puntuacion">
+			<a href="#" onclick="notification('info', '1. Brian = 200 puntos <br> 2. Loreto = 170 puntos <br> 3. Yasmina = 80 puntos <br> 4. Adrián = 20 puntos <br>'+jugador_puntuacion+' puntos');">Ver las puntuaciones</a>
+		<div/>
+		<a href="juego.html">Volver a jugar</a>
+   </body>
+</html>
